@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infosystem - Soluções em Tecnologia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom yellow color from the logo */
+        .bg-custom-yellow {
+            background-color: #FDE047; /* Equivalent to Tailwind yellow-400 */
+        }
+        .text-custom-yellow {
+            color: #FDE047;
+        }
+        .border-custom-yellow {
+            border-color: #FDE047;
+        }
+        .hover\:bg-custom-yellow-dark:hover {
+            background-color: #FBBF24; /* Equivalent to Tailwind amber-500 or a darker yellow */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-0">
+                <img src="assets/icon.png" alt="Logo Infosystem" class="h-[60px] w-[60px]" onerror="this.alt='Infosystem Logo'; this.src='https://placehold.co/150x50/FDE047/000000?text=Infosystem';">
+                <span class="text-2xl font-bold text-gray-700">Infosystem</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="#inicio" class="text-gray-600 hover:text-custom-yellow transition duration-300">Início</a>
+                <a href="#servicos" class="text-gray-600 hover:text-custom-yellow transition duration-300">Serviços</a>
+                <a href="#diferenciais" class="text-gray-600 hover:text-custom-yellow transition duration-300">Diferenciais</a>
+                <a href="#contato" class="text-gray-600 hover:text-custom-yellow transition duration-300">Contato</a>
+                <a href="#contato" class="bg-custom-yellow text-gray-900 font-semibold px-6 py-2 rounded-lg hover:bg-custom-yellow-dark transition duration-300 shadow-sm">
+                    Solicitar Orçamento
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <a href="#inicio" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 hover:text-custom-yellow transition duration-300">Início</a>
+            <a href="#servicos" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 hover:text-custom-yellow transition duration-300">Serviços</a>
+            <a href="#diferenciais" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 hover:text-custom-yellow transition duration-300">Diferenciais</a>
+            <a href="#contato" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 hover:text-custom-yellow transition duration-300">Contato</a>
+            <a href="#contato" class="block px-6 py-3 bg-custom-yellow text-gray-900 font-semibold rounded-b-lg hover:bg-custom-yellow-dark transition duration-300 text-center">
+                Solicitar Orçamento
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+                <!-- Left Column (Text) -->
+                <div class="md:w-1/2 lg:w-3/5 text-center md:text-left mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+                        Infosystem: <span class="text-custom-yellow">Soluções Tecnológicas</span> Inteligentes para o Seu Sucesso.
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Oferecemos as ferramentas digitais que impulsionam o seu sucesso, apoiamos sua jornada de inovação através da disponibilização de softwares de ponta.
+                    </p>
+                    <a href="#servicos" class="bg-custom-yellow text-gray-900 font-semibold px-8 py-3 rounded-lg hover:bg-custom-yellow-dark transition duration-300 text-lg shadow-md inline-block">
+                        Conheça Nossos Serviços
+                    </a>
+                </div>
+                <!-- Right Column (Image/Illustration) -->
+                <div class="md:w-1/2 lg:w-2/5 flex justify-center md:justify-end">
+                    <img src="https://placehold.co/500x400/E0E7FF/374151?text=Inova%C3%A7%C3%A3o+Tecnol%C3%B3gica" alt="Ilustração de Tecnologia e Inovação" class="rounded-lg shadow-xl w-full max-w-md">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicos" class="py-16 md:py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Serviços Especializados</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Oferecemos um portfólio completo de serviços para atender às necessidades tecnológicas e fiscais da sua empresa.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                        <div class="text-custom-yellow mb-4">
+                            <svg class="w-12 h-12 mx-auto sm:mx-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Sistema de gestão comercial</h3>
+                        <p class="text-gray-600 text-sm">
+                            Disponibilizamos sistemas de automação comercial completos, configurados para atender às suas necessidades específicas.
+                        </p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                        <div class="text-custom-yellow mb-4">
+                             <svg class="w-12 h-12 mx-auto sm:mx-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m0 0a8.485 8.485 0 0011.494 0M12 17.747a8.485 8.485 0 01-11.494 0M12 17.747v-5.494m0 0A8.485 8.485 0 00.506 12.253M12 12.253a8.485 8.485 0 0111.494 0M12 12.253v-5.494m0 0A8.485 8.485 0 00.506 6.753M12 6.753a8.485 8.485 0 0111.494 0"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Consultoria</h3>
+                        <p class="text-gray-600 text-sm">
+                            Análise e planejamento estratégico para otimizar sua infraestrutura e processos tecnológicos.
+                        </p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                        <div class="text-custom-yellow mb-4">
+                            <svg class="w-12 h-12 mx-auto sm:mx-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Soluções em Nuvem</h3>
+                        <p class="text-gray-600 text-sm">
+                            Temos sistemas web com armazenamento em nuvem, para melhor usabilidade dentro e fora do seu empreendimento.
+                        </p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                        <div class="text-custom-yellow mb-4">
+                            <svg class="w-12 h-12 mx-auto sm:mx-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Suporte Técnico</h3>
+                        <p class="text-gray-600 text-sm">
+                            Assistência especializada para garantir a continuidade e o bom funcionamento dos seu sistema.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="diferenciais" class="py-16 md:py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Por que escolher a Infosystem?</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Entregamos mais do que tecnologia, entregamos resultados que impulsionam o seu negócio.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x450/FFFBEB/374151?text=Equipe+Comprometida" alt="Equipe Infosystem" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-custom-yellow text-gray-900 rounded-full flex items-center justify-center font-bold">1</div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">Inovação Contínua</h3>
+                                <p class="text-gray-600">Buscamos constantemente as melhores e mais recentes tecnologias para aplicar em seus projetos.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-custom-yellow text-gray-900 rounded-full flex items-center justify-center font-bold">2</div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">Foco no Cliente</h3>
+                                <p class="text-gray-600">Entendemos suas necessidades para oferecer soluções que realmente agregam valor.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-custom-yellow text-gray-900 rounded-full flex items-center justify-center font-bold">3</div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">Qualidade Garantida</h3>
+                                <p class="text-gray-600">Processos bem definidos e uma equipe qualificada para entregar projetos com excelência.</p>
+                            </div>
+                        </div>
+                         <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-custom-yellow text-gray-900 rounded-full flex items-center justify-center font-bold">4</div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">Parceria de Sucesso</h3>
+                                <p class="text-gray-600">Mais que fornecedores, somos parceiros no crescimento e na transformação digital da sua empresa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="contato" class="py-16 md:py-24 bg-gray-800 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Pronto para Transformar Seu Negócio?</h2>
+                <p class="text-lg text-gray-300 mb-10 max-w-xl mx-auto">
+                    Entre em contato conosco hoje mesmo e descubra como a Infosystem pode ajudar sua empresa a alcançar novos patamares.
+                </p>
+                <a href="https://wa.me/message/3Y73MQREM6CJO1" target="_blank" rel="noopener noreferrer" class="bg-custom-yellow text-gray-900 font-semibold px-10 py-4 rounded-lg hover:bg-custom-yellow-dark transition duration-300 text-lg shadow-md inline-block">
+                    Fale Conosco
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-4">
+                <!-- You can add social media icons here -->
+                <a href="#" class="mx-2 hover:text-custom-yellow transition duration-300">Facebook</a>
+                <a href="#" class="mx-2 hover:text-custom-yellow transition duration-300">LinkedIn</a>
+                <a href="#" class="mx-2 hover:text-custom-yellow transition duration-300">Instagram</a>
+            </div>
+            <p class="text-sm">&copy; <span id="currentYear"></span> Infosystem. Todos os direitos reservados.</p>
+            <p class="text-xs mt-1">Desenvolvido com paixão por tecnologia.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                // Close mobile menu if open and an item is clicked
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                // Scroll to target
+                if (targetId.length > 1) { // Ensure it's not just "#"
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
